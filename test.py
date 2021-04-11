@@ -11,9 +11,10 @@ players = {
     'Jubinha' : 87353829,
     'Will' : 97264439,
     'Peu' : 154813282,
-    'Ze' : 204133988
+    'Ze' : 204133988,
+    'Boreah': 83967899
 }
-player_list = ['Eder', 'Raphael', 'Jubinha', 'Will', 'Peu', 'Ze']
+player_list = ['Eder', 'Raphael', 'Jubinha', 'Will', 'Peu', 'Ze', 'Boreah']
 
 class MyClient(discord.Client):
     async def on_ready(self):
