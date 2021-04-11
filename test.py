@@ -44,7 +44,7 @@ class MyClient(discord.Client):
                     
                     msg += f'{player} jogou de {hero["localized_name"]}, mamou {match["deaths"]} {"vezes" if match["deaths"] > 1 else "vez"} e {"venceu" if win else "perdeu de novo"}.\n'
                 
-                msg += f'Saldo do dia: {count_wins} vitória(s) e {len(matches) - count_wins} derrota(s).'
+                msg += f'Saldo das últimas 24h: {count_wins} vitória(s) e {len(matches) - count_wins} derrota(s).'
                 await message.channel.send(msg)
                 if player == 'Ze':
                     await message.channel.send('MaMaMaMamou mumumuito hoje!!!', tts=True)
