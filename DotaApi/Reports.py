@@ -72,7 +72,7 @@ class Reports:
 
     @staticmethod
     def player_stats(report):
-        msg = f'[{report["match_date"]}][{report["match_duration"]}m] {report["hero"]} - {report["kills"]} cagadas / {report["deaths"]} mamadas / {report["assists"]} tentativas de ks.'
+        msg = f'[{report["match_date"]}][{report["match_duration"]}m] {report["hero"]} - {report["kills"]} cagadas / {report["deaths"]} mamadas / {report["assists"]} tentativas de ks - {"Venceu" if int(report["win"])==1 else "Perdeu"}.'
         return msg
     @staticmethod
     def player_match_report_msg(report):
