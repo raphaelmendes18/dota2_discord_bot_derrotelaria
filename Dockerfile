@@ -6,4 +6,4 @@ ENV BOT_TOKEN=$BOT_TOKEN
 COPY . .
 RUN apt update
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python3","test.py"]
+ENTRYPOINT ["python3","bot.py"]
