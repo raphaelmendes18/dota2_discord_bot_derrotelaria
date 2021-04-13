@@ -10,7 +10,7 @@ class Player(Api):
     def __init__(self, name, id):
         self.name = name
         self.id = id
-        self.player_info = self.get_player_info()
+        self.player_info = self.get_info()
 
     def get_info(self):
         '''
