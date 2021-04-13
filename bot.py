@@ -81,7 +81,7 @@ class MyClient(discord.Client):
                 await message.channel.send(f"Erro, heroi não informado.")
                 return
             else:
-                hero = message.content.split(' ')[3]
+                hero = message.content.split(' ',2)[3]
             if player not in player_list:
                 await message.channel.send(f"Erro, somente os players: {', '.join(player_list)}")
                 return
