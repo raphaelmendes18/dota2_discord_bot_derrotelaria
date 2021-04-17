@@ -72,12 +72,12 @@ class Reports:
 
     @staticmethod
     def player_stats(report):
-        msg = f'[{report["match_date"]}][{report["match_duration"]}m] {report["hero"]} - {report["kills"]} cagadas / {report["deaths"]} mamadas / {report["assists"]} tentativas de ks - {"Venceu" if int(report["win"])==1 else "Perdeu"}.'
+        msg = f'[{report["match_date"]}][{report["match_duration"]}m] {report["hero"]} - {report["kills"]} \U0001F4A9 / {report["deaths"]} \U0001F480 / {report["assists"]} \U0001F44D - {"\U0001F3C6" if int(report["win"])==1 else "\U0001F534"}.'
         return msg
     @staticmethod
     def player_match_report_msg(report):
         msg = f'[{report["match_date"]}][{report["match_duration"]}m] {report["hero"]} - {report["kills"]}/{report["deaths"]}/{report["assists"]} - '
-        msg += f'LH:{report["last_hits"]} - DN:{report["denies"]} - HD:{report["hero_damage"]} - TD:{report["tower_damage"]} - GPM:{report["gold_per_min"]} - XPM:{report["xp_per_min"]} - {"Venceu" if int(report["win"])==1 else "Perdeu"}' 
+        msg += f'LH:{report["last_hits"]} - DN:{report["denies"]} - HD:{report["hero_damage"]} - TD:{report["tower_damage"]} - GPM:{report["gold_per_min"]} - XPM:{report["xp_per_min"]} - {"\U0001F3C6" if int(report["win"])==1 else "\U0001F534"}' 
         return msg
     
     @staticmethod
